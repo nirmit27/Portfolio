@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/079e457941.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nirmit Mishra - Portfolio</title>
+  </head>
+  <body>
+    <!--------------------------- Header --------------------------->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./assets/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-end Web Developer</p>
+          <h1>Hi, I'm <span>Nirmit</span> Mishra</h1>
+        </div>
+      </div>
+    </div>
+    <!--------------------------- About ---------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./assets/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              animi dicta. Cupiditate cum sed minus accusantium ab quas culpa,
+              animi quisquam, dolore, error dolorem dolor? Quia quasi quod
+              magnam consectetur?
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Front-end Web development
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />C , C++ , Python
+                </li>
+              </ul>
+            </div>
+            <!-- Experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022</span><br />Web Development and Design Internship
+                  at Oasis Infobyte
+                </li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />B.Tech (CSE) from Babu
+                  Banarasi Das Northern India Insitute of Technology, Lucknow,
+                  India
+                </li>
+                <li>
+                  <span>2021</span><br />Intermediate (ISC) from Modern School,
+                  Lucknow, India
+                </li>
+                <li>
+                  <span>2018</span><br />High School (ICSE) from City Montessori
+                  School, Lucknow, India
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------- Services ---------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus illo aspernatur omnis, architecto unde ducimus fuga
+              voluptatem molestiae aperiam odit, quam ipsa eos minima! Rerum
+              aliquid rem hic ut ab!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus illo aspernatur omnis, architecto unde ducimus fuga
+              voluptatem molestiae aperiam odit, quam ipsa eos minima! Rerum
+              aliquid rem hic ut ab!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------- Portfolio ---------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./assets/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Password Generator Web App</h3>
+              <p>
+                A random password generator Web App to create strong and secure
+                passwords developed using HTML, CSS and JavaScript.
+              </p>
+              <a href="https://nirmit27.github.io/mini-project/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/work-2.png" alt="" />
+            <div class="layer">
+              <h3>To-Do List Web App</h3>
+              <p>
+                A simple Web App developed using HTML, CSS and JavaScript that
+                provides a To-Do list to the user.
+              </p>
+              <a href="https://nirmit27.github.io/Web_ToDo/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/nirmit27?tab=repositories"
+          target="_blank"
+          class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+    <!--------------------------- Contact ---------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>mishrayyhsnm2002@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i>+91 - 7521988699</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/nirmit-mishra-0a0b6a224/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/nirmit27" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://codepen.io/nirmit27" target="_blank"
+                ><i class="fa-brands fa-codepen"></i
+              ></a>
+            </div>
+            <a href="./assets/Resumé .pdf" download class="btn btn2"
+              >Download Résumé</a
+            >
+          </div>
+          <!------------ Contact Form ------------>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Nirmit. Made with <i class="fa-solid fa-heart"></i> by
+          Nirmit Mishra
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
