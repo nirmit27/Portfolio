@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -330,7 +334,7 @@ nav ul li a:hover::after {
   font-size: 25px;
 }
 
-.contact-left p a{
+.contact-left p a {
   text-decoration: none;
   color: #fbff00;
 }
@@ -400,6 +404,11 @@ form .btn2 {
 
 .copyright i {
   color: red;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: #fbff00;
 }
 
 /* ------------------------------ CSS for Small Screens ------------------------------ */
