@@ -235,7 +235,7 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -261,7 +261,7 @@ nav ul li a:hover::after {
   position: absolute;
   left: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,6 +312,10 @@ nav ul li a:hover::after {
 
 .btn:hover {
   background: #ff004f;
+}
+
+.btn:active {
+  transform: scale(0.95, 0.95);
 }
 
 /* ------------------------------ Contact ------------------------------ */
@@ -406,7 +410,7 @@ form .btn2 {
   color: red;
 }
 
-.copyright a{
+.copyright a {
   text-decoration: none;
   color: #fbff00;
 }
@@ -478,6 +482,12 @@ nav .fa-regular {
   }
   .copyright {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .layer {
+    overflow: scroll;
   }
 }
 
