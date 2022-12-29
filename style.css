@@ -235,7 +235,7 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -485,9 +485,35 @@ nav .fa-regular {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 765px) and (max-width: 950px) {
+  .layer h3 {
+    display: none;
+  }
   .layer {
-    overflow: scroll;
+    font-size: 13px;
+  }
+  .layer a {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 675px) and (max-width: 765px) {
+  .layer h3 {
+    display: none;
+  }
+  .layer {
+    font-size: 12px;
+  }
+  .layer a {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
   }
 }
 
