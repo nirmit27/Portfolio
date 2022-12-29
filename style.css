@@ -485,7 +485,7 @@ nav .fa-regular {
   }
 }
 
-@media only screen and (min-width: 765px) and (max-width: 950px) {
+@media only screen and (min-width: 765px) and (max-width: 990px) {
   .layer h3 {
     display: none;
   }
@@ -502,6 +502,22 @@ nav .fa-regular {
 }
 
 @media only screen and (min-width: 675px) and (max-width: 765px) {
+  .layer h3 {
+    display: none;
+  }
+  .layer {
+    font-size: 12px;
+  }
+  .layer a {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
   .layer h3 {
     display: none;
   }
