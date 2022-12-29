@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+*::-webkit-scrollbar{
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,6 +50,12 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px 140px;
+  background: linear-gradient( rgb(0, 0, 0), rgb(23, 18, 70));
 }
 
 nav ul li {
@@ -79,7 +89,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 25%;
   font-size: 30px;
 }
 
